@@ -7,7 +7,7 @@ const start = async () => {
     try {
         let mediaConstraints = {video: true};
         if (navigator.userAgentData.mobile){
-            mediaConstraints.video = {facingMode: 'user'}
+            mediaConstraints.video = {facingMode: { exact: "environment" }}
         }
         let stream = await navigator.mediaDevices.getUserMedia({video: true})
         video.srcObject = stream
