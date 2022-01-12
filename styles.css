@@ -44,7 +44,7 @@ body {
 }
 
 video {
-    width: 100vw;
+    min-width: 500px;
     height: 100vh;
     z-index: 1;
 }
